@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using BigO.ArraySorting;
+
+const int size = 100000000;
+
+QuickSort.Run(size);
