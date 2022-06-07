@@ -1,14 +1,20 @@
-﻿namespace BigO.ArraySorting;
+﻿/********************************************************************************************************************************
+* QuickSort is an in-place sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961. *
+* Time Complexity Best: O(n*log n), Average: O(n*log n), Worst : O(n2)                                                          *
+* Space Complexity O(log n)                                                                                                     *
+********************************************************************************************************************************/
+
+namespace BigO.ArraySorting;
 
 public class QuickSort
 {
     /// <summary>
-    /// QuickSort has O(n log(n)) time complexity and O(log(n)) space complexity. The last item of array is selected for pivot.
+    /// The last item of array is selected for pivot.
     /// </summary>
-    /// <param name="size"></param>
+    /// <param name="size">Any number greater than zero.</param>
     public static void Run(int size)
     {
-        var baseArr = CreateRandomArray(size);
+        var baseArr = ArrayCreator.CreateRandomArray(size);
         var arr = (int[])baseArr.Clone();
         var sw = new Stopwatch();
         sw.Start();
@@ -41,17 +47,5 @@ public class QuickSort
         }
 
         return pointer - 1;
-    }
-
-    private static int[] CreateRandomArray(int size)
-    {
-        var array = new int[size];
-        var rand = new Random();
-        for (var i = 0; i < size; i++)
-        {
-            array[i] = rand.Next(0, size < 100 ? 100 : size);
-        }
-
-        return array;
     }
 }
