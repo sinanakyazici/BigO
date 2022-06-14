@@ -19,7 +19,7 @@ public class InsertionSort
         sw.Start();
         SortArray(arr);
         sw.Stop();
-        Console.WriteLine($"Insertion Elapsed Time : {sw.ElapsedMilliseconds} ms");
+        Console.WriteLine($"InsertionSort Elapsed Time : {sw.ElapsedMilliseconds} ms");
         return arr;
     }
 
