@@ -12,7 +12,7 @@ public class MergeSort
     /// The middle item of array is selected to divide.
     /// </summary>
     /// <param name="baseArr">The array that will be sorted.</param>
-    public static void Run(int[] baseArr)
+    public static int[] Run(int[] baseArr)
     {
         var arr = (int[])baseArr.Clone();
         var sw = new Stopwatch();
@@ -20,6 +20,7 @@ public class MergeSort
         SortArray(arr, 0, arr.Length - 1);
         sw.Stop();
         Console.WriteLine($"MergeSort Elapsed Time : {sw.ElapsedMilliseconds} ms");
+        return arr;
     }
 
     private static void SortArray(int[] arr, int first, int last)
