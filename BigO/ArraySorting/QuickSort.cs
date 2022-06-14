@@ -11,10 +11,9 @@ public class QuickSort
     /// <summary>
     /// The last item of array is selected for pivot.
     /// </summary>
-    /// <param name="size">Any number greater than zero.</param>
-    public static void Run(int size)
+    /// <param name="baseArr">The array that will be sorted.</param>
+    public static void Run(int[] baseArr)
     {
-        var baseArr = ArrayCreator.CreateRandomArray(size);
         var arr = (int[])baseArr.Clone();
         var sw = new Stopwatch();
         sw.Start();
