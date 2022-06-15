@@ -6,5 +6,7 @@ var baseArr = ArrayCreator.CreateRandomArray(size);
 var arr1 = QuickSort.Run(baseArr);
 var arr2 = MergeSort.Run(baseArr);
 var arr3 = InsertionSort.Run(baseArr);
+var arr4 = SelectionSort.Run(baseArr);
 
-ArrayComparator.Compare(arr1, arr2, arr3);
+Array.Sort(baseArr);
+ArrayComparator.Compare(baseArr, arr1, arr2, arr3, arr4);
