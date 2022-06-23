@@ -1,6 +1,6 @@
 ﻿/********************************************************************************************************************************
 * QuickSort is an in-place sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961. *
-* Time Complexity Best: O(n*log n), Average: O(n*log n), Worst : O(n^2)                                                          *
+* Time Complexity Best: O(n*log n), Average: O(n*log n), Worst : O(n^2)                                                         *
 * Space Complexity O(log n)                                                                                                     *
 ********************************************************************************************************************************/
 
