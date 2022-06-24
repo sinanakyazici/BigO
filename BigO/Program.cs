@@ -9,7 +9,7 @@ var arr2 = MergeSort.Run(baseArr);
 var arr6 = HeapSort.Run(baseArr);
 var arr7 = ShellSort.Run(baseArr);
 var arr8 = BucketSort.Run(baseArr);
-var arr9 = BucketSortForInteger.Run(baseArr);
+var arr9 = CountingSort.Run(baseArr);
 
 ArrayComparator.Compare(baseArr, arr1, arr2,  arr6, arr7, arr8, arr9, arr10);
 

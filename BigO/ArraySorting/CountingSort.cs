@@ -1,15 +1,15 @@
 ﻿/********************************************************************************************************************************
-* Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets.*
+* Counting sort is an algorithm for sorting a collection of objects according to keys that are small positive integers          *
 * Time Complexity Best: O(n + k), Average: O(n + k), Worst : O(n + k)                                                           *
 * Space Complexity O(n + k)                                                                                                     *
 ********************************************************************************************************************************/
 
 namespace BigO.ArraySorting;
 
-public class BucketSortForInteger
+public class CountingSort
 {
     /// <summary>
-    /// The scatter-gather approach is selected for comparision.
+    /// The count approach is selected for comparision.
     /// </summary>
     /// <param name="baseArr">The array that will be sorted.</param>
     public static int[] Run(int[] baseArr)
@@ -19,7 +19,7 @@ public class BucketSortForInteger
         sw.Start();
         SortArray(arr, arr.Length);
         sw.Stop();
-        Console.WriteLine($"BucketSortForInteger Elapsed Time : {sw.ElapsedMilliseconds} ms");
+        Console.WriteLine($"CountingSort Elapsed Time : {sw.ElapsedMilliseconds} ms");
         return arr;
     }
 
