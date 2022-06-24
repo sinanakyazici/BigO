@@ -23,7 +23,7 @@ public class InsertionSort
         return arr;
     }
 
-    private static void SortArray(int[] arr)
+    public static void SortArray(int[] arr)
     {
         for (var i = 1; i < arr.Length; i++)
         {
